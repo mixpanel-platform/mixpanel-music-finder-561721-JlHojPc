@@ -35,6 +35,8 @@
             MP.api.segment(eventName, propName, dateRange).done(function(results) {
               eventGraph.MPChart('setData', results);
               eventTable.MPTable('setData', results);
+              console.log('Query results:'); // <== add this line
+39 |          console.log(results); // <== add this line
             });
           }
         };
